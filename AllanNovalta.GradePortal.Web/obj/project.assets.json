@@ -11506,11 +11506,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ALLAN_Novalta\\Documents\\CSM_Website\\New AllanNovalta.GradePortal.Web\\AllanNovalta.GradePortal\\AllanNovalta.GradePortal.Web\\AllanNovalta.GradePortal.Web.csproj",
+      "projectUniqueName": "C:\\Users\\ALLAN_Novalta\\Documents\\CSM_Website\\New AllanNovalta.CSMGradePortal.Web\\AllanNovalta.GradePortal.Web\\AllanNovalta.GradePortal.Web.csproj",
       "projectName": "AllanNovalta.GradePortal.Web",
-      "projectPath": "C:\\Users\\ALLAN_Novalta\\Documents\\CSM_Website\\New AllanNovalta.GradePortal.Web\\AllanNovalta.GradePortal\\AllanNovalta.GradePortal.Web\\AllanNovalta.GradePortal.Web.csproj",
+      "projectPath": "C:\\Users\\ALLAN_Novalta\\Documents\\CSM_Website\\New AllanNovalta.CSMGradePortal.Web\\AllanNovalta.GradePortal.Web\\AllanNovalta.GradePortal.Web.csproj",
       "packagesPath": "C:\\Users\\ALLAN_Novalta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ALLAN_Novalta\\Documents\\CSM_Website\\New AllanNovalta.GradePortal.Web\\AllanNovalta.GradePortal\\AllanNovalta.GradePortal.Web\\obj\\",
+      "outputPath": "C:\\Users\\ALLAN_Novalta\\Documents\\CSM_Website\\New AllanNovalta.CSMGradePortal.Web\\AllanNovalta.GradePortal.Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
