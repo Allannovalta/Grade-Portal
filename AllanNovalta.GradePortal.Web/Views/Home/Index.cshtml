@@ -118,7 +118,7 @@
                 <p>Are you sure you want to delete <span id="modal-delete-user-username"></span>?</p>
             </div>
             <div class="modal-footer">
-                <a href="#" id="modal-delete-user-confirm"><button type="button" class="btn btn-primary">Reset Password</button></a>
+                <a href="#" id="modal-delete-user-confirm"><button type="button" class="btn btn-primary">Delete User</button></a>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -136,13 +136,13 @@
         function confirmActivateAccount(userId, userName) {
             $("#modal-account-status-username").html(userName);
             $(".modal-account-status-label").html("Activate");
-            $("#modal-account-status-confirm").attr("href", "/home/change-status/activate/" + userId);
+            $("#modal-account-status-confirm").attr("href", "/home/change-status/Active/" + userId);
             $("#modal-account-status").modal("show");
         }
         function confirmDeactivateAccount(userId, userName) {
             $("#modal-account-status-username").html(userName);
             $(".modal-account-status-label").html("Deactivate");
-            $("#modal-account-status-confirm").attr("href", "/home/change-status/deactivate/" + userId);
+            $("#modal-account-status-confirm").attr("href", "/home/change-status/Locked/" + userId);
             $("#modal-account-status").modal("show");
         }
         function confirmDeleteUser(userId, userName) {

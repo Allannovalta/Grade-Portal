@@ -8,6 +8,7 @@ using AllanNovalta.GradePortal.Web.Models;
 using AllanNovalta.GradePortal.Web.Infrastructure.Data.Helpers;
 using AllanNovalta.GradePortal.Web.ViewModels.Users;
 using AllanNovalta.GradePortal.Web.Infrastructure.Data.Models;
+using AllanNovalta.GradePortal.Web.Infrastructure.Data.Enums;
 
 namespace AllanNovalta.GradePortal.Web.Controllers
 {
@@ -54,24 +55,58 @@ namespace AllanNovalta.GradePortal.Web.Controllers
             });
         }
 
-        public IActionResult About()
+        [HttpGet, Route("home/reset-password/{userId}")]
+        public IActionResult ResetPassword(Guid? userId)
         {
-            ViewData["Message"] = "Your application description page.";
+            var user = this._context.Users.FirstOrDefault(u => u.Id == userId);
 
-            return View();
+
+            if (user != null)
+            {
+                user.Password = RandomString(8);
+                user.LoginStatus = Infrastructure.Data.Enums.LoginStatus.NeedsToChangePassword;
+                this._context.Users.Update(user);
+                this._context.SaveChanges();
+            }
+
+            return RedirectToAction("index");
         }
 
-        public IActionResult Contact()
+        private Random random = new Random();
+        private string RandomString(int length)
         {
-            ViewData["Message"] = "Your contact page.";
-
-            return View();
+            const string chars = "abcdefghijklmnopqrstuvwxyz0123456789";
+            return new string(Enumerable.Repeat(chars, length)
+              .Select(s => s[random.Next(s.Length)]).ToArray());
         }
 
-        public IActionResult Privacy()
+        [HttpGet, Route("home/change-status/{status}/{userId}")]
+        public IActionResult ChangeStatus(string status, Guid? userId)
         {
-            return View();
+            var loginStatus = (LoginStatus)Enum.Parse(typeof(LoginStatus), status, true);
+            var user = this._context.Users.FirstOrDefault(u => u.Id == userId);
+            if (user != null)
+            {
+                user.LoginStatus = loginStatus;
+                this._context.Users.Update(user);
+                this._context.SaveChanges();
+            }
+            return RedirectToAction("index");
         }
+
+
+        [HttpGet, Route("home/delete/{userId}")]
+        public IActionResult Delete(Guid? userId)
+        {
+            var user = this._context.Users.FirstOrDefault(u => u.Id == userId);
+            if (user != null)
+            {
+                this._context.Users.Remove(user);
+                this._context.SaveChanges();
+            }
+            return RedirectToAction("index");
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
@@ -80,3 +115,4 @@ namespace AllanNovalta.GradePortal.Web.Controllers
         }
     }
 }
+
