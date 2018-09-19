@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using AllanNovalta.GradePortal.Web.Models;
 using AllanNovalta.GradePortal.Web.Infrastructure.Data.Helpers;
+using AllanNovalta.GradePortal.Web.ViewModels.Users;
 
 namespace AllanNovalta.GradePortal.Web.Controllers
 {
@@ -21,7 +22,10 @@ namespace AllanNovalta.GradePortal.Web.Controllers
         public IActionResult Index()
         {
             var users = this._context.Users.ToList();
-            return View();
+            return View(new IndexViewModel()
+            {
+                Users = this._context.Users.ToList()
+            });
         }
 
         public IActionResult About()

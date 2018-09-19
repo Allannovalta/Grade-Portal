@@ -29,3 +29,4 @@ C:\Users\ALLAN_Novalta\Documents\CSM_Website\New AllanNovalta.CSMGradePortal.Web
 C:\Users\ALLAN_Novalta\Documents\CSM_Website\New AllanNovalta.CSMGradePortal.Web\AllanNovalta.GradePortal.Web\obj\Debug\netcoreapp2.1\AllanNovalta.GradePortal.Web.dll
 C:\Users\ALLAN_Novalta\Documents\CSM_Website\New AllanNovalta.CSMGradePortal.Web\AllanNovalta.GradePortal.Web\obj\Debug\netcoreapp2.1\AllanNovalta.GradePortal.Web.pdb
 C:\Users\ALLAN_Novalta\Documents\CSM_Website\New AllanNovalta.CSMGradePortal.Web\AllanNovalta.GradePortal.Web\obj\Debug\netcoreapp2.1\AllanNovalta.GradePortal.Web.csproj.CopyComplete
+C:\Users\ALLAN_Novalta\Documents\CSM_Website\New AllanNovalta.CSMGradePortal.Web\AllanNovalta.GradePortal.Web\obj\Debug\netcoreapp2.1\AllanNovalta.GradePortal.Web.csprojAssemblyReference.cache
