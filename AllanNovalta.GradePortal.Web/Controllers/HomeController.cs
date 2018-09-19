@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using AllanNovalta.GradePortal.Web.Models;
 using AllanNovalta.GradePortal.Web.Infrastructure.Data.Helpers;
 using AllanNovalta.GradePortal.Web.ViewModels.Users;
+using AllanNovalta.GradePortal.Web.Infrastructure.Data.Models;
 
 namespace AllanNovalta.GradePortal.Web.Controllers
 {
@@ -19,12 +20,37 @@ namespace AllanNovalta.GradePortal.Web.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int pageSize = 5, int pageIndex = 1, string keyword = "")
         {
-            var users = this._context.Users.ToList();
+            Page<User> result = new Page<User>();
+            if (pageSize < 1)
+            {
+                pageSize = 1;
+            }
+            IQueryable<User> userQuery = (IQueryable<User>)this._context.Users;
+            if (string.IsNullOrEmpty(keyword) == false)
+            {
+                userQuery = userQuery.Where(u => u.FirstName.Contains(keyword)
+                                            || u.LastName.Contains(keyword)
+                                            || u.EmailAddress.Contains(keyword));
+            }
+            long queryCount = userQuery.Count();
+            int pageCount = (int)Math.Ceiling((decimal)(queryCount / pageSize));
+            long mod = (queryCount % pageSize);
+            if (mod > 0)
+            {
+                pageCount = pageCount + 1;
+            }
+            int skip = (int)(pageSize * (pageIndex - 1));
+            List<User> users = userQuery.ToList();
+            result.Items = users.Skip(skip).Take((int)pageSize).ToList();
+            result.PageCount = pageCount;
+            result.PageSize = pageSize;
+            result.QueryCount = queryCount;
+            result.CurrentPage = pageIndex;
             return View(new IndexViewModel()
             {
-                Users = this._context.Users.ToList()
+                Users = result
             });
         }
 
