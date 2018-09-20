@@ -1,0 +1,39 @@
+﻿@using AllanNovalta.GradePortal.Web.Infrastructure.Data.Models;
+@*@model AllanNovalta.GradePortal.Web.ViewModels.Users.IndexViewModel;*@
+@{
+    ViewData["Title"] = "Grade";
+}
+
+<h2>Grade</h2>
+
+<div class="container">
+    <h2>Grades</h2>
+    @*<p>Here is a paged list of all the users</p>*@
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Subject Title</th>
+                <th>Subject Code</th>
+                <th>Academic Year</th>
+                <th>Semester</th>
+                <th>Grade</th>
+                <th>Grade Point</th>
+                <th>Comments</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                foreach (User user in Model.Users.Items)
+                {
+                    <tr>
+                        <td>@user.FullName</td>
+                        <td>@user.EmailAddress</td>
+                        <td>@user.Gender</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
