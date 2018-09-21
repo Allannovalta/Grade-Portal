@@ -12,5 +12,6 @@ namespace AllanNovalta.GradePortal.Web.Infrastructure.Data.Helpers
         public long PageCount { get; set; }
         public long PageSize { get; set; }
         public long CurrentPage { get; set; }
+        //public 
     }
 }

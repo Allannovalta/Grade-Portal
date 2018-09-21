@@ -1,5 +1,5 @@
 ﻿@using AllanNovalta.GradePortal.Web.Infrastructure.Data.Models;
-@*@model AllanNovalta.GradePortal.Web.ViewModels.Users.IndexViewModel;*@
+@model AllanNovalta.GradePortal.Web.ViewModels.Users.AddGrade;
 @{
     ViewData["Title"] = "Grade";
 }
@@ -24,13 +24,17 @@
         </thead>
         <tbody>
             @{
-                foreach (User user in Model.Users.Items)
+                foreach (Grade grade in Model.Items)
                 {
-                    <tr>
-                        <td>@user.FullName</td>
-                        <td>@user.EmailAddress</td>
-                        <td>@user.Gender</td>
-                    </tr>
+            <tr>
+                <td>@grade.SubjectTitle</td>
+                <td>@grade.SubjectCode</td>
+                <td>@grade.AcademicYear</td>
+                <td>@grade.Semester</td>
+                <td>@grade.GradePercent</td>
+                <td>@grade.GradePoint</td>
+                <td>@grade.Comment</td>
+            </tr>
                 }
             }
         </tbody>
