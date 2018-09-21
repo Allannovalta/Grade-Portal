@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AllanNovalta.GradePortal.Web.Migrations
 {
     [DbContext(typeof(DefaultDbContext))]
-    [Migration("20180919072719_init")]
+    [Migration("20180921103030_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -18,6 +18,32 @@ namespace AllanNovalta.GradePortal.Web.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "2.1.3-rtm-32065")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
+
+            modelBuilder.Entity("AllanNovalta.GradePortal.Web.Infrastructure.Data.Models.Grade", b =>
+                {
+                    b.Property<Guid?>("Id")
+                        .ValueGeneratedOnAdd();
+
+                    b.Property<string>("AcademicYear");
+
+                    b.Property<string>("Comment");
+
+                    b.Property<decimal>("GradePercent");
+
+                    b.Property<decimal>("GradePoint");
+
+                    b.Property<string>("Semester");
+
+                    b.Property<string>("SubjectCode");
+
+                    b.Property<string>("SubjectTitle");
+
+                    b.Property<DateTime>("Timestamp");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Grades");
+                });
 
             modelBuilder.Entity("AllanNovalta.GradePortal.Web.Infrastructure.Data.Models.User", b =>
                 {

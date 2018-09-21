@@ -1,0 +1,44 @@
+﻿@using AllanNovalta.GradePortal.Web.Areas.Manage.Models;
+@model AllanNovalta.GradePortal.Web.Areas.Manage.ViewModels.GradeSheets.IndexViewModel
+@{
+    ViewData["Title"] = "Grades";
+}
+
+<h2>Grades</h2>
+<p>Here is a paged list of all the grades</p>
+@*<a href="~/home/create" title="Create User"><button type="button" class="btn">Create User    <i class="fas fa-plus"></i></button></a>*@
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Subject Title</th>
+            <th>Subject Code</th>
+            <th>Academic Year</th>
+            <th>Semester</th>
+            <th>Grade</th>
+            <th>Grade Point</th>
+            <th>Remark</th>
+            <th>Comments</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (StudentGrade grade in Model.Grades.Items)
+            {
+                <tr>
+                    <td>@grade.FullName</td>
+                    <td>@grade.SubjectCode</td>
+                    <td>@grade.SubjectTitle</td>
+                    <th>@grade.AcademicYear</th>
+                    <th>@grade.Semester</th>
+                    <th>@grade.GradePercent</th>
+                    <th>@grade.GradePoint</th>
+                    @*<th>@grade.Remark</th>*@
+                    <th>@grade.Comment</th>
+
+                </tr>
+            }
+        }
+    </tbody>
+</table>

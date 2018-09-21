@@ -18,8 +18,11 @@ namespace AllanNovalta.GradePortal.Web.Infrastructure.Data.Helpers
         #region Models
 
         public DbSet<User> Users { get; set; }
+        public DbSet<Grade> Grades { get; set; }
 
         #endregion
+
+
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
