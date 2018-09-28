@@ -77,5 +77,11 @@ namespace AllanNovalta.GradePortal.Web.Areas.Manage.Controllers
 
 
         }
+
+        [HttpGet, Route("manage/grades/Create")]
+        public IActionResult Create()
+        {
+            return View();
+        }
     }
 }

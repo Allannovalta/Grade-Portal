@@ -10,6 +10,5 @@ namespace AllanNovalta.GradePortal.Web.ViewModels.Users
     public class IndexViewModel
     {
         public Page<User> Users { get; set; }
-        //public Page<Grade> Grades { get; set; }
     }
 }

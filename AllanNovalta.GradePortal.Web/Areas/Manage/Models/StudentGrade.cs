@@ -30,6 +30,8 @@ namespace AllanNovalta.GradePortal.Web.Areas.Manage.Models
 
         public decimal GradePoint { get; set; }
 
+        public bool IsFailed { get; set; }
+
         public string Comment { get; set; }
     }
 }
