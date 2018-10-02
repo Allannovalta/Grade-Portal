@@ -14,20 +14,66 @@
         <input type="name" class="form-control" id="name" asp-for="Name" aria-describedby="NameHelp" placeholder="Enter Student Name">
         <small id="NameHelp" class="form-text text-muted">Name is required.</small>
     </div>
+
     <div class="form-group">
         <label for="SubjectCode">SubjectCode</label>
         <input type="subjectCode" class="form-control" id="subjectCode" asp-for="subjectCode" aria-describedby="SubjectCodeHelp" placeholder="Subject Code">
         <small id="SubjectCodeHelp" class="form-text text-muted">Subject Code is required.</small>
     </div>
+
     <div class="form-group">
         <label for="SubjectTitle">SubjectTitle</label>
         <input type="subjectTitle" class="form-control" id="subjectTitle" asp-for="subjectTitle" aria-describedby="SubjectTitleHelp" placeholder="Subject Title">
         <small id="SubjectTitleHelp" class="form-text text-muted">Subject Title is required.</small>
     </div>
+
     <div class="form-group">
         <label for="academicYear">AcademicYear</label>
         <input type="academicYear" class="form-control" id="subjectTitle" asp-for="academicYear" aria-describedby="AcademicYearHelp" placeholder="Academic Year">
         <small id="AcademicYearHelp" class="form-text text-muted"> Academic Year is required.</small>
     </div>
+
+    <div class="form-group">
+        <label for="semester">Semester</label>
+        <select class="form-control" id="semester" asp-for="Semester">
+            @{
+                var options = Enum.GetValues(typeof(AllanNovalta.GradePortal.Web.Areas.Manage.Infrastructure.Data.Enums.Semester)).Cast<AllanNovalta.GradePortal.Web.Areas.Manage.Infrastructure.Data.Enums.Semester>();
+                foreach (AllanNovalta.GradePortal.Web.Areas.Manage.Infrastructure.Data.Enums.Semester option in options)
+                {
+                    <option value="@option">@option.ToString()</option>
+                }
+            }
+        </select>
+        <small id="semesterHelp" class="form-text text-muted">Semester is required.</small>
+    </div>
+
+    <div class="form-group">
+        <label for="gradePoint">GradePoint</label>
+        <input type="gradePoint" class="form-control" id="GradePoint" asp-for="gradePoint" aria-describedby="GradePointHelp" placeholder="Grade Point">
+        <small id="GradePointHelp" class="form-text text-muted">Grade Point is required.</small>
+    </div>
+
+    <div class="form-group">
+        <label for="isFailed">Passed/Failed</label>
+        <select class="form-control" id="isFailed" asp-for="isFailed">
+            @{
+                var _options = Enum.GetValues(typeof(AllanNovalta.GradePortal.Web.Areas.Manage.Infrastructure.Data.Enums.IsFailed)).Cast<AllanNovalta.GradePortal.Web.Areas.Manage.Infrastructure.Data.Enums.IsFailed>();
+                foreach (AllanNovalta.GradePortal.Web.Areas.Manage.Infrastructure.Data.Enums.IsFailed option in options)
+                {
+                    <option value="@option">@option.ToString()</option>
+                }
+            }
+        </select>
+        <small id="IsFailedHelp" class="form-text text-muted">Passed/Failed is required.</small>
+    </div>
+
+    <div class="form-group">
+        <label for="comment">Comment</label>
+        <input type="Comment" class="form-control" id="Comment" asp-for="comment" aria-describedby="CommenttHelp" placeholder="Comment">
+        <small id="CommenttHelp" class="form-text text-muted">Comment is required.</small>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a href="~/manage/grades" class="btn btn-danger">Cancel</a>
 
 </form>

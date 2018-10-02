@@ -50,7 +50,7 @@ namespace AspNetCore
             WriteLiteral("\r\n<h2>Edit Grade</h2>\r\n\r\n");
             EndContext();
             BeginContext(157, 581, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cbd08c22aa5440128ff09674bbacd90d", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "43cf2f991de141868d339f7484bbc18c", async() => {
                 BeginContext(199, 2, true);
                 WriteLiteral("\r\n");
                 EndContext();

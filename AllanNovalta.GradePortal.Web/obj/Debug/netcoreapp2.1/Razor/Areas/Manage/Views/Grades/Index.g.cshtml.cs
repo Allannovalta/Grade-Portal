@@ -60,7 +60,7 @@ using AllanNovalta.GradePortal.Web.Areas.Manage.Models;
             WriteLiteral("\r\n<div class=\"container\">\r\n    <h2>Grades</h2>\r\n    <p>Edit the grades here!</p>\r\n    ");
             EndContext();
             BeginContext(343, 112, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d189751c0e6845fe9d3bd03e85f7d053", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bd0c593c3ce2410a801afd60e7f861ae", async() => {
                 BeginContext(394, 57, true);
                 WriteLiteral("<button type=\"button\" class=\"btn\">Add Grades</i></button>");
                 EndContext();

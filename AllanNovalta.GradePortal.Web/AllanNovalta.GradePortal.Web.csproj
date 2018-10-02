@@ -44,7 +44,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Manage\Infrastructure\Data\Enums\" />
     <Folder Include="Areas\Manage\Infrastructure\Data\Helpers\" />
   </ItemGroup>
 
