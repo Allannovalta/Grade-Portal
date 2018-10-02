@@ -5,14 +5,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="obj\**" />
     <Compile Remove="wwwroot\images\**" />
+    <Content Remove="obj\**" />
     <Content Remove="wwwroot\images\**" />
+    <EmbeddedResource Remove="obj\**" />
     <EmbeddedResource Remove="wwwroot\images\**" />
+    <None Remove="obj\**" />
     <None Remove="wwwroot\images\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="ViewModels\Users\AddGrade.cs" />
+    <Compile Remove="Areas\Manage\Infrastructure\Data\Enums\Gender.cs" />
+    <Compile Remove="Areas\Manage\Infrastructure\Data\Enums\LoginStatus.cs" />
+    <Compile Remove="Areas\Manage\Infrastructure\Data\Helpers\BaseModel.cs" />
+    <Compile Remove="Areas\Manage\Infrastructure\Data\Helpers\DefaultDbContext.cs" />
+    <Compile Remove="Areas\Manage\Infrastructure\Data\Helpers\Page.cs" />
+    <Compile Remove="Areas\Manage\Infrastructure\Data\Models\User.cs" />
+    <Compile Remove="Infrastructure\Data\Models\Grade.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Home\Grade.cshtml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,13 +38,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Manage\Data\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Update="Areas\Manage\Views\Shared\_Layout.cshtml">
       <Pack>$(IncludeRazorContentInPack)</Pack>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Manage\Infrastructure\Data\Enums\" />
+    <Folder Include="Areas\Manage\Infrastructure\Data\Helpers\" />
   </ItemGroup>
 
 </Project>

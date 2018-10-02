@@ -7,7 +7,9 @@ using System.Threading.Tasks;
 namespace AllanNovalta.GradePortal.Web.Areas.Manage.ViewModels.GradeSheets
 {
     public class EditGradeViewModel
-    {  
+    {
+                [Required]
+                public string FullName { get; set; }
                 [Required]
                 public string SubjectCode { get; set; }
                 [Required]

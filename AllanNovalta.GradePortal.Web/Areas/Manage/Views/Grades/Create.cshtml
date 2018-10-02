@@ -1,7 +1,33 @@
-﻿
+﻿@using AllanNovalta.GradePortal.Web.Areas.Manage.ViewModels.GradeSheets;
+
 @{
     ViewData["Title"] = "Create";
+    Layout = "~/Areas/Manage/Views/Shared/_Layout.cshtml";
 }
 
 <h2>Create</h2>
+<form action="~/home/create" method="post">
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary()
+    <div class="form-group">
+        <label for="Name">Student Name</label>
+        <input type="name" class="form-control" id="name" asp-for="Name" aria-describedby="NameHelp" placeholder="Enter Student Name">
+        <small id="NameHelp" class="form-text text-muted">Name is required.</small>
+    </div>
+    <div class="form-group">
+        <label for="SubjectCode">SubjectCode</label>
+        <input type="subjectCode" class="form-control" id="subjectCode" asp-for="subjectCode" aria-describedby="SubjectCodeHelp" placeholder="Subject Code">
+        <small id="SubjectCodeHelp" class="form-text text-muted">Subject Code is required.</small>
+    </div>
+    <div class="form-group">
+        <label for="SubjectTitle">SubjectTitle</label>
+        <input type="subjectTitle" class="form-control" id="subjectTitle" asp-for="subjectTitle" aria-describedby="SubjectTitleHelp" placeholder="Subject Title">
+        <small id="SubjectTitleHelp" class="form-text text-muted">Subject Title is required.</small>
+    </div>
+    <div class="form-group">
+        <label for="academicYear">AcademicYear</label>
+        <input type="academicYear" class="form-control" id="subjectTitle" asp-for="academicYear" aria-describedby="AcademicYearHelp" placeholder="Academic Year">
+        <small id="AcademicYearHelp" class="form-text text-muted"> Academic Year is required.</small>
+    </div>
 
+</form>

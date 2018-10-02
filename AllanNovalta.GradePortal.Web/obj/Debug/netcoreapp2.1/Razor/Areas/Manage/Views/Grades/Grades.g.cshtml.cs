@@ -55,7 +55,7 @@ using AllanNovalta.GradePortal.Web.Areas.Manage.Models;
             WriteLiteral("\r\n<h2>Grades</h2>\r\n<p>Here is a paged list of all the grades</p>\r\n");
             EndContext();
             BeginContext(254, 131, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "68bae8fc0fd4456184c7201c2770cbf1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a287572a909747dbb74d01a2df2d773d", async() => {
                 BeginContext(298, 83, true);
                 WriteLiteral("<button type=\"button\" class=\"btn\">Add Grades   <i class=\"fas fa-plus\"></i></button>");
                 EndContext();
