@@ -61,7 +61,7 @@ using AllanNovalta.GradePortal.Web.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html lang=\"en\">\r\n");
             EndContext();
             BeginContext(35, 541, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ed95148c8f9c45efaf020863c5ebdc59", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3146267719e04f04ba0e041196b18e1a", async() => {
                 BeginContext(41, 272, true);
                 WriteLiteral(@"
     <meta charset=""utf-8"">
@@ -74,7 +74,7 @@ using AllanNovalta.GradePortal.Web.Models;
     ");
                 EndContext();
                 BeginContext(313, 54, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e6c60aaf69e34d2f9f82e75b6ebc014f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "da31efeac2d746a1ac8bf931c2a7e7f4", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -108,7 +108,7 @@ using AllanNovalta.GradePortal.Web.Models;
             WriteLiteral("\r\n\r\n");
             EndContext();
             BeginContext(580, 1314, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c8a8f3a5a404480bba4588f20c1e83f5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5751a96b52774a839ba183a9fb75b57f", async() => {
                 BeginContext(586, 845, true);
                 WriteLiteral(@"
     <!-- Navigation -->
@@ -130,7 +130,7 @@ using AllanNovalta.GradePortal.Web.Models;
                     ");
                 EndContext();
                 BeginContext(1431, 59, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f325dfbdccfb40248b2dc61ff8ef0ab0", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8181a6b3af544e6098b05baf95c8a564", async() => {
                     BeginContext(1480, 6, true);
                     WriteLiteral("Grades");
                     EndContext();
@@ -165,7 +165,7 @@ using AllanNovalta.GradePortal.Web.Models;
                 WriteLiteral("\r\n\r\n    </div>\r\n\r\n    <!-- Bootstrap core JavaScript -->\r\n    ");
                 EndContext();
                 BeginContext(1741, 42, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2ac5144cc0104ab9abf25fcd74c3beb7", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fff26786fcd9433bb017f95d4e4feef5", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -183,7 +183,7 @@ using AllanNovalta.GradePortal.Web.Models;
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(1789, 52, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d0880f45fba141b1a2874e3aeb9e41e9", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "268513cc955140d797ac8dba67713014", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

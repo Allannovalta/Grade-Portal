@@ -88,7 +88,7 @@ using AllanNovalta.GradePortal.Web.Models;
             WriteLiteral("\r\n<h2>Create</h2>\r\n\r\n");
             EndContext();
             BeginContext(137, 2709, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "85e5b247d7b648c8a7734a18a77ef90c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8c7f33bede374a918343cea048073fa9", async() => {
                 BeginContext(180, 6, true);
                 WriteLiteral("\r\n    ");
                 EndContext();
@@ -113,7 +113,7 @@ Write(Html.ValidationSummary());
                 WriteLiteral("\r\n    <div class=\"form-group\">\r\n        <label for=\"emailAddress\">Email Address</label>\r\n        ");
                 EndContext();
                 BeginContext(338, 152, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "3a759be70f99468a985ef8aa01bd0a0c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "0342fd63ed2145028e5800660986645f", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -142,7 +142,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\r\n        <small id=\"emailAddressHelp\" class=\"form-text text-muted\">Email Address is required.</small>\r\n    </div>\r\n    <div class=\"form-group\">\r\n        <label for=\"password\">Password</label>\r\n        ");
                 EndContext();
                 BeginContext(692, 138, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "b14a2fd60f504ef79a9607b0402ed725", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "15491446a02348929078222e8c45b4bb", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -171,7 +171,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\r\n        <small id=\"passwordHelp\" class=\"form-text text-muted\">Password is required.</small>\r\n    </div>\r\n    <div class=\"form-group\">\r\n        <label for=\"confirmPassword\">Confirm Password</label>\r\n        ");
                 EndContext();
                 BeginContext(1038, 172, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "9fced1830f3548db8094f8cb9a30e92c", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "0a97552bdbbe496696da4dddbb6dbc13", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -200,7 +200,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\r\n        <small id=\"confirmPasswordHelp\" class=\"form-text text-muted\">Password Confirmation is required.</small>\r\n    </div>\r\n    <hr />\r\n    <div class=\"form-group\">\r\n        <label for=\"firstName\">First Name</label>\r\n        ");
                 EndContext();
                 BeginContext(1438, 139, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "e0d345066df84f2f9bbf4577e688b9ca", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d82cf96e9629482a96b4370b58680ea4", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -229,7 +229,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\r\n        <small id=\"firstNameHelp\" class=\"form-text text-muted\">First name is required.</small>\r\n    </div>\r\n    <div class=\"form-group\">\r\n        <label for=\"lastName\">Last Name</label>\r\n        ");
                 EndContext();
                 BeginContext(1774, 135, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "af7fbb4f896d4c218ae39275b559a07a", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("input", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "449d26a0722347bca7cd259bb6683cb4", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper>();
@@ -258,7 +258,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                 WriteLiteral("\r\n        <small id=\"lastNameHelp\" class=\"form-text text-muted\">Last name is required.</small>\r\n    </div>\r\n    <div class=\"form-group\">\r\n        <label for=\"gender\">Gender</label>\r\n        ");
                 EndContext();
                 BeginContext(2099, 514, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6cc5a8e0d02f4ef281879fa9b0300bce", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("select", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e7fb6cadd3844cf6a4e9f2e5c7c62e3f", async() => {
                     BeginContext(2157, 2, true);
                     WriteLiteral("\r\n");
                     EndContext();
@@ -274,7 +274,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_InputTagHelper.For = ModelExpressionProvid
                     WriteLiteral("                    ");
                     EndContext();
                     BeginContext(2509, 51, false);
-                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "afe1f1a1c23441ccae38244e2737581b", async() => {
+                    __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b0d4407076d24d35b33e479c2ca4c76d", async() => {
                         BeginContext(2534, 17, false);
 #line 44 "C:\Users\ALLAN_Novalta\Documents\CSM_Website\New AllanNovalta.CSMGradePortal.Web\AllanNovalta.GradePortal.Web\Views\Home\Create.cshtml"
                                        Write(option.ToString());
@@ -339,7 +339,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_SelectTagHelper.For = ModelExpressionProvi
                 WriteLiteral("\r\n        <small id=\"genderHelp\" class=\"form-text text-muted\">Gender is required.</small>\r\n    </div>\r\n    <button type=\"submit\" class=\"btn btn-primary\">Submit</button>\r\n    ");
                 EndContext();
                 BeginContext(2787, 50, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "bd48300954644d3b9206684918d01079", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "82f52535b14a447c9b407ee2a170a715", async() => {
                     BeginContext(2827, 6, true);
                     WriteLiteral("Cancel");
                     EndContext();
