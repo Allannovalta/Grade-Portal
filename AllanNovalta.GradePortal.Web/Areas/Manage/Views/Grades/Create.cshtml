@@ -48,6 +48,12 @@
     </div>
 
     <div class="form-group">
+        <label for="gradePercent">GradePercent</label>
+        <input type="gradePercent" class="form-control" id="GradePercent" asp-for="gradePoint" aria-describedby="GradePercentHelp" placeholder="GradePercent">
+        <small id="GradePercentHelp" class="form-text text-muted">Grade Percent is required.</small>
+    </div>
+
+    <div class="form-group">
         <label for="gradePoint">GradePoint</label>
         <input type="gradePoint" class="form-control" id="GradePoint" asp-for="gradePoint" aria-describedby="GradePointHelp" placeholder="Grade Point">
         <small id="GradePointHelp" class="form-text text-muted">Grade Point is required.</small>
@@ -75,5 +81,9 @@
 
     <button type="submit" class="btn btn-primary">Submit</button>
     <a href="~/manage/grades" class="btn btn-danger">Cancel</a>
+
+
+
+
 
 </form>

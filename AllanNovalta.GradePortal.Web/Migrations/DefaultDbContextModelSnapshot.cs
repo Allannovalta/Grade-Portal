@@ -26,17 +26,27 @@ namespace AllanNovalta.GradePortal.Web.Migrations
 
                     b.Property<string>("Comment");
 
+                    b.Property<string>("FirstName");
+
                     b.Property<decimal>("GradePercent");
 
                     b.Property<decimal>("GradePoint");
 
+                    b.Property<bool>("IsFailed");
+
+                    b.Property<string>("LastName");
+
                     b.Property<string>("Semester");
+
+                    b.Property<Guid?>("StudentId");
 
                     b.Property<string>("SubjectCode");
 
                     b.Property<string>("SubjectTitle");
 
                     b.Property<DateTime>("Timestamp");
+
+                    b.Property<Guid?>("UserId");
 
                     b.HasKey("Id");
 

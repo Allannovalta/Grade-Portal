@@ -12,6 +12,18 @@ namespace AllanNovalta.GradePortal.Web.Infrastructure.Data.Models
 
         public Guid? UserId { get; set; }
 
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
+
+        public string FullName
+        {
+            get
+            {
+                return this.FirstName + " " + this.LastName;
+            }
+        }
+
         public string SubjectTitle { get; set; }
 
         public string SubjectCode { get; set; }     

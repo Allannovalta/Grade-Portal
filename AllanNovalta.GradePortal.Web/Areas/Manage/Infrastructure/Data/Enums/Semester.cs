@@ -7,7 +7,7 @@ namespace AllanNovalta.GradePortal.Web.Areas.Manage.Infrastructure.Data.Enums
 {
     public enum Semester
     {
-        First,
-        Second,
+        First ,
+        Second 
     }
 }

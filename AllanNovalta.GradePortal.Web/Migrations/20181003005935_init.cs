@@ -13,12 +13,17 @@ namespace AllanNovalta.GradePortal.Web.Migrations
                 {
                     Id = table.Column<Guid>(nullable: false),
                     Timestamp = table.Column<DateTime>(nullable: false),
+                    StudentId = table.Column<Guid>(nullable: true),
+                    UserId = table.Column<Guid>(nullable: true),
+                    FirstName = table.Column<string>(nullable: true),
+                    LastName = table.Column<string>(nullable: true),
                     SubjectTitle = table.Column<string>(nullable: true),
                     SubjectCode = table.Column<string>(nullable: true),
                     AcademicYear = table.Column<string>(nullable: true),
                     Semester = table.Column<string>(nullable: true),
                     GradePercent = table.Column<decimal>(nullable: false),
                     GradePoint = table.Column<decimal>(nullable: false),
+                    IsFailed = table.Column<bool>(nullable: false),
                     Comment = table.Column<string>(nullable: true)
                 },
                 constraints: table =>

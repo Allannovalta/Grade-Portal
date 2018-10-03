@@ -9,6 +9,10 @@ namespace AllanNovalta.GradePortal.Web.Areas.Manage.ViewModels.GradeSheets
     public class EditGradeViewModel
     {
                 [Required]
+                public Guid? StudentId { get; set; }
+                [Required]
+        public Guid? UserId { get; set; }
+        [Required]
                 public string FullName { get; set; }
                 [Required]
                 public string SubjectCode { get; set; }
@@ -19,11 +23,12 @@ namespace AllanNovalta.GradePortal.Web.Areas.Manage.ViewModels.GradeSheets
                 [Required]
                 public string Semester { get; set; }
                 [Required]
-                public decimal Grade { get; set; }
+                public decimal GradePercent { get; set; }
                 [Required]
                 public decimal GradePoint { get; set; }
                 [Required]
-                //Remark { get; set; }
+                public bool IsFailed { get; set; }
+                [Required]
                 public string Comment { get; set; }
     }
 }

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AllanNovalta.GradePortal.Web.Areas.Manage.Models;
 using AllanNovalta.GradePortal.Web.Areas.Manage.ViewModels.GradeSheets;
 using AllanNovalta.GradePortal.Web.Infrastructure.Data.Helpers;
+//using AllanNovalta.GradePortal.Web.Areas.Manage.Models.SudentGrade;
 using AllanNovalta.GradePortal.Web.Infrastructure.Data.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -82,6 +83,39 @@ namespace AllanNovalta.GradePortal.Web.Areas.Manage.Controllers
         public IActionResult Create()
         {
             return View();
+        }
+
+        //[HttpGet, Route("manage/grades/create")]
+        //public IActionResult _Create()
+        //{
+        //    return View();
+        //}
+
+        [HttpPost, Route("manage/grades/create")]
+        public IActionResult Create(EditGradeViewModel model)
+        {
+            if (!ModelState.IsValid)
+                return RedirectToAction("index");
+            var grade = this._context.Grades.FirstOrDefault(u => u.FullName.ToLower() == model.FullName.ToLower());
+            if (grade == null)
+            {
+                grade = new Grade()
+                {
+                    StudentId = model.StudentId,
+                    UserId = model.UserId,
+                    SubjectTitle = model.SubjectTitle,
+                    SubjectCode = model.SubjectCode,
+                    AcademicYear = model.AcademicYear,
+                    Semester = model.Semester,
+                    GradePercent = model.GradePercent,
+                    GradePoint = model.GradePoint,
+                    IsFailed = model.IsFailed,
+                    Comment = model.Comment
+                };
+                this._context.Grades.Add(grade);
+                this._context.SaveChanges();
+            }
+            return RedirectToAction("grades");
         }
     }
 }
