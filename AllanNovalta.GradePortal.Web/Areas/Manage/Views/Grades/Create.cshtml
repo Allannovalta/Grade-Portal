@@ -1,4 +1,4 @@
-﻿@using AllanNovalta.GradePortal.Web.Areas.Manage.ViewModels.GradeSheets;
+﻿@model AllanNovalta.GradePortal.Web.Areas.Manage.ViewModels.GradeSheets.EditGradeViewModel;
 
 @{
     ViewData["Title"] = "Create";
@@ -6,13 +6,18 @@
 }
 
 <h2>Create</h2>
-<form action="~/home/create" method="post">
+<form action="~/manage/grades/create" method="post">
     @Html.AntiForgeryToken()
     @Html.ValidationSummary()
     <div class="form-group">
-        <label for="Name">Student Name</label>
-        <input type="name" class="form-control" id="name" asp-for="Name" aria-describedby="NameHelp" placeholder="Enter Student Name">
-        <small id="NameHelp" class="form-text text-muted">Name is required.</small>
+        <label for="UserId">User Id</label>
+        <input type="userId" class="form-control" id="userId" asp-for="userId" aria-describedby="userIdHelp" placeholder="Enter User Ide">
+        <small id="userIdHelp" class="form-text text-muted">User Id is required.</small>
+    </div>
+    <div class="form-group">
+        <label for="FullName">Full Name</label>
+        <input type="fullName" class="form-control" id="fullName" asp-for="fullName" aria-describedby="fullNameHelp" placeholder="Enter Student Full Name">
+        <small id="fullNameHelp" class="form-text text-muted">Full Name is required.</small>
     </div>
 
     <div class="form-group">

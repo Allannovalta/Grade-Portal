@@ -96,10 +96,8 @@ namespace AllanNovalta.GradePortal.Web.Areas.Manage.Controllers
         {
             if (!ModelState.IsValid)
                 return RedirectToAction("index");
-            var grade = this._context.Grades.FirstOrDefault(u => u.FullName.ToLower() == model.FullName.ToLower());
-            if (grade == null)
-            {
-                grade = new Grade()
+
+                var grade = new Grade()
                 {
                     StudentId = model.StudentId,
                     UserId = model.UserId,
@@ -114,7 +112,7 @@ namespace AllanNovalta.GradePortal.Web.Areas.Manage.Controllers
                 };
                 this._context.Grades.Add(grade);
                 this._context.SaveChanges();
-            }
+ 
             return RedirectToAction("grades");
         }
     }
